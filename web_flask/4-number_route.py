@@ -37,7 +37,7 @@ def c_route(text):
 @app.route("/python/<text>", strict_slashes=False)
 @app.route('/python/', defaults={'text': 'is_cool'}, strict_slashes=False)
 def python_route(text):
-    """displays dynamic variable"""
+    """displays dynamic variable with default preset"""
     text = text.split('_')
     text = ' '.join(text)
     return f"Python {text}"
