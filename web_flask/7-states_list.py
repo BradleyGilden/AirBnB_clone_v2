@@ -26,6 +26,7 @@ def close_storage(err):
 def states_list():
     """returns a template with a list of states"""
     states = list(storage.all(State).values())
+    states.sort()
     return render_template('7-states_list.html', states=states)
 
 
