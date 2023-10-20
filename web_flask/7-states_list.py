@@ -21,6 +21,7 @@ def close_storage(err):
     """closes SQLAlchemy session if db storage or reloads file storage"""
     storage.close()
 
+
 @app.route("/states_list", strict_slashes=False)
 def states_list():
     """returns a template with a list of states"""
